@@ -1,2 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
 @import 'tailwindcss';
+
 @plugin '@tailwindcss/typography';
+
+@theme {
+	--font-main: 'Protest Revolution', sans-serif;
+	--font-title: 'Metal Mania', Georgia, serif;
+	--font-quote: 'Rock Salt', cursive;
+	--font-pixeled: 'Jersey 15', sans-serif;
+	--color-background: #030C12;
+	--color-accent: #081C2A;
+	--color-text: #DCB273;
+	--color-cinnabar: #e63b1a;
+	--color-cream: #ffffb4;
+}
+
+:root {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: var(--font-main);
+	color: var(--color-text);
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+	display: none;
+}
+
+html {
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}
+
+body {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+	user-select: none;
+	background-color: var(--color-background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-title);
+}
