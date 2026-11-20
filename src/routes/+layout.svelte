@@ -4,7 +4,7 @@
 	import { page } from '$app/state';
 	import { locales, localizeHref } from '#lib/paraglide/runtime.js';
 	import './layout.css';
-	import favicon from '#lib/assets/favicon.svg';
+	import favicon from '#lib/assets/favicon.ico';
 	import type { LayoutProps } from './$types';
 
 	let { children }: LayoutProps = $props();
